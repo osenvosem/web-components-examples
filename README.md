@@ -15,3 +15,32 @@ Adaptive popup component that receives text and image attributes (the default im
 ```html
 <popup-info text="" img=""></popup-info>
 ```
+
+### `<ul is="expanding-list">`
+
+![Screenshot 2020-12-27 at 22 01 10](https://user-images.githubusercontent.com/6762673/103177835-09fc8780-488f-11eb-94e6-7687c6df5a94.jpg)
+
+It is a customized build-in element that allows for building nested lists.
+
+```html
+<ul is="expanding-list">
+  <li>Juice</li>
+  <li>Milk</li>
+  <li>Hot chocolate</li>
+  <li>
+    Tea
+    <ul>
+      <li>Grey tea</li>
+      <li>Black tea</li>
+      <li>
+        Green tea
+        <ul>
+          <li>Sencha</li>
+          <li>Gyokuro</li>
+          <li>Kabusecha</li>
+        </ul>
+      </li>
+    </li>
+  </ul>
+</ul>
+```

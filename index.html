@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sandbox</title>
-</head>
-<body>
-  <div id="app">
-    <popup-info text="Useful info"></popup-info>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandbox</title>
+  </head>
 
-  <script src="/main.js"></script>
-</body>
+  <body>
+    <div id="app">
+      <popup-info text="Useful info"></popup-info>
+      <ul is="expanding-list">
+        <li>Juice</li>
+        <li>Milk</li>
+        <li>Hot chocolate</li>
+        <li>
+          Tea 
+          <ul>
+            <li>Grey tea</li>
+            <li>Black tea</li>
+            <li>
+              Green tea
+              <ul>
+                <li>Sencha</li>
+                <li>Gyokuro</li>
+                <li>Kabusecha</li>
+              </ul>
+            </li>
+          </li>
+        </ul>
+      </ul>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
 </html>
