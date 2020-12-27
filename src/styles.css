@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+}
+
+#app {
+  display: grid;
+  padding: 4rem;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
