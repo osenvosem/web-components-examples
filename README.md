@@ -44,3 +44,13 @@ It is a customized build-in element that allows for building nested lists.
   </ul>
 </ul>
 ```
+
+### `<progress-bar value="" width="">`
+
+![Screenshot 2020-12-29 at 10 29 09](https://user-images.githubusercontent.com/6762673/103266621-09fca480-49c1-11eb-9618-66615e698194.jpg)
+
+It is a progress bar component that demonstates the usage of _lifecycle callbacks_.
+
+```html
+<progress-bar value="20"></progress-bar>
+```
