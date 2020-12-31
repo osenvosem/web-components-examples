@@ -32,6 +32,51 @@
       </ul>
 
       <progress-bar value="20"></progress-bar>
+
+      <!-- dictionary-word -->
+      <div>
+
+        <template id="dictionary-word-template">
+          <style>
+            details {
+              padding: 4px;
+              border: 1px dashed #eee;
+            }
+            slot[name="word-summary"] {
+              font-style: italic;
+              cursor: pointer;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+            }
+            slot[name="description"] { color: #333;}
+          </style>
+          <details>
+            <summary><slot name="word-summary">You need to provide summary</slot></summary>
+            <slot name="description">You need to provide description</slot>
+          </details>
+        </template> 
+
+        <dictionary-word>
+          <span slot="word-summary">contestation</span>
+          <span slot="description"><p>controversy, debate</p></span>
+        </dictionary-word>
+
+        <dictionary-word>
+          <span slot="word-summary">perorate</span>
+          <ul slot="description">
+            <li>to deliver a long or grandiloquent oration</li>
+            <li>to make a peroration</li>
+          </ul>
+        </dictionary-word>
+
+        <dictionary-word>
+          <span slot="word-summary">arthrospore</span>
+          <ol slot="description">
+            <li>an isolated vegetative cell that has passed into a resting state, occurring in bacteria and not regarded as a truespore.</li>
+            <li>one of a number of spores of various fungi and certain blue-green algae, united in the form of a string of beads, formed by fission.</li>
+          </ol>
+        </dictionary-word>
+      </div>
     </div>
 
     <script src="/main.js"></script>

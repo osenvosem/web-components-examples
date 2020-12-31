@@ -26,6 +26,7 @@ const config: webpack.Configuration = {
     hot: true,
     compress: true,
   },
+  devtool: 'source-map'
 };
 
 export default config;

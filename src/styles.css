@@ -4,8 +4,19 @@ body {
 
 #app {
   display: grid;
-  padding: 4rem;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  padding: 2rem;
+  justify-content: stretch;
+  align-items: stretch;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+#app > * {
+  margin: 0;
+  padding: 2rem;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.06);
 }

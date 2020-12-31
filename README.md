@@ -54,3 +54,25 @@ It is a progress bar component that demonstates the usage of _lifecycle callback
 ```html
 <progress-bar value="20"></progress-bar>
 ```
+
+### `<dictionary-word>`
+
+![Screenshot 2020-12-31 at 18 09 04](https://user-images.githubusercontent.com/6762673/103415474-47189080-4b93-11eb-9b01-003f716d83c4.jpg)
+
+A dictionary word component which contains the word itself an its definition. The component demonstrates usage of templates and slots.
+
+```html
+<dictionary-word>
+  <span slot="word-summary">arthrospore</span>
+  <ol slot="description">
+    <li>
+      an isolated vegetative cell that has passed into a resting state,
+      occurring in bacteria and not regarded as a truespore.
+    </li>
+    <li>
+      one of a number of spores of various fungi and certain blue-green algae,
+      united in the form of a string of beads, formed by fission.
+    </li>
+  </ol>
+</dictionary-word>
+```
